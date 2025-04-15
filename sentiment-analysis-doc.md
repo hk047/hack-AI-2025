@@ -315,6 +315,25 @@ plt.show()
 
 Transformers are like AI superheroes. They use models like "BERT" to understand context — like spotting sarcasm — better than TextBlob. This use much more complex learning methods to see words as part of full sentences, rather than just in isolation from each other.
 
+#### HuggingFace Setup (Critical Step!)
+
+The Transformers are held by HuggingFace, so we need to get access to this. 
+
+1. We'll need to create an account: https://huggingface.co
+2. Once you've created an account and verified it, login into your new HuggingFace account and click on your profile photo in the top right of the page.
+3. Click on "Access Tokens" in the dropdown menu.
+4. Click "Create New Token".
+5. Name your new token "first-token".
+6. For "Token type", select Write.
+7. Click "Create token".
+8. Copy the value (it should look something like: hf_hlfs8yefh23g873rli23gf237gf) and paste it in Notepad.
+9. In Google Colab, open the Secrets tab (above the folder icon on the left, where you uploaded the datasets).
+10. Click " + Add new secret"
+11. Name it as "HF_TOKEN" and paste the token value into the "value" field.
+12. Ensure that the notebook has access using the toggle on the left (see image below).
+
+<img width="413" alt="Screenshot 2025-04-15 at 11 40 07" src="https://github.com/user-attachments/assets/a6deecbc-ce92-4c55-8d6a-602bdf5f8219" />
+
 ---
 
 ### Step 1: Install and Import Transformers
